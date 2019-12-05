@@ -45,8 +45,8 @@ int main(int argc, char *argv[]) {
                 printf("\nEnter the shift key: ");
                 scanf("%d", &key);
                 printf("Enter the string to encrypt: ");
-                    if(argc == 2) {
-                        key = atoi(argv[1]);
+                    if(argc == 2) {     //run program with one command-line argument
+                        key = atoi(argv[1]); //convert ASCII to integer for key entered
                     }
                 while((ch = getchar()) != EOF) {
                     printf("%c", encrypt(ch, key));
