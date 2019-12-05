@@ -4,7 +4,12 @@
 void menu();
 
 void menu() {
-    printf("Please Choose a Selection :) \n 1. Encrypt \n 2. Decrypt \n 3. Exit \n");
+    printf("Main Menu\n");
+        for (int i = 0; i < 30; i++)
+            {
+            printf("-");
+            }
+    printf("\nPlease Choose a Selection :) \n 1. Encrypt \n 2. Decrypt \n 3. Exit \n");
 }
 
 int encrypt(int str, int shiftKey) {
@@ -42,6 +47,7 @@ int main(int argc, char *argv[]) {
         switch(opt){
             //Encrypt
             case 1:
+                printf("\n**To Return to the Menu, press CTRL+D**");
                 printf("\nEnter the shift key: ");
                 scanf("%d", &key);
                 printf("Enter the string to encrypt: ");
@@ -51,9 +57,11 @@ int main(int argc, char *argv[]) {
                 while((ch = getchar()) != EOF) {
                     printf("%c", encrypt(ch, key));
                 }
+                printf("\n");
             break;
             //Decrypt 
             case 2:
+                printf("**To Return to the Menu, press CTRL+D**");
                 printf("\nEnter the shift key: ");
                 scanf("%d", &key);
                 printf("Enter the string to decrypt: ");
