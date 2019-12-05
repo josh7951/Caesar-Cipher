@@ -1,1 +1,1 @@
-Here is a Simple Caesar Cipher in C
+Here is a Simple Caesar Shift Cipher in C.

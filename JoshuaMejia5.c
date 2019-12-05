@@ -48,7 +48,6 @@ int main(int argc, char *argv[]) {
                     if(argc == 2) {
                         key = atoi(argv[1]);
                     }
-                printf("Encryption Complete: \n")
                 while((ch = getchar()) != EOF) {
                     printf("%c", encrypt(ch, key));
                 }
