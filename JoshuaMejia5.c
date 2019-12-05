@@ -68,7 +68,11 @@ int main(int argc, char *argv[]) {
             case 3:
               printf("Terminating Caesar Cipher . . . Goodbye! :)");
               exit(0);
+            break;
+          default:
+            printf("Not a valid entry. Please try again!\n\n");
         }
+        
     }
     return 0;
 }
