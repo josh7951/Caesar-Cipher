@@ -71,6 +71,7 @@ int main(int argc, char *argv[]) {
                 while((ch = getchar()) != EOF) {
                     printf("%c", decrypt(ch, key));
                 }
+                printf("\n");
             break;
             //Terminate Program :D
             case 3:
