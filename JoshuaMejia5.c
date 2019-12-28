@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
                     if(argc == 2) {     //run program with one command-line argument
                         key = atoi(argv[1]); //convert ASCII to integer for key entered
                     }
-                while((ch = getchar()) != EOF) {
+                while((ch = getchar()) != EOF) {    //find alternative eventually . . . 
                     printf("%c", encrypt(ch, key));
                 }
                 printf("\n");
